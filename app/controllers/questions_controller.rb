@@ -1,7 +1,9 @@
 class QuestionsController < ApplicationController
 
-  def show
-  end
-  
+  def index
 
+  end
+  def show
+  	render "questions/#{params[:id]}"
+  end
 end
