@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150420225523) do
+ActiveRecord::Schema.define(version: 20150421195736) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20150420225523) do
   create_table "adults", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "question_responses", force: :cascade do |t|
+    t.integer  "student_id"
+    t.integer  "question_id"
+    t.boolean  "response"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "questions", force: :cascade do |t|
@@ -39,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150420225523) do
     t.text     "age"
     t.integer  "location"
     t.boolean  "victim"
+<<<<<<< HEAD
     t.boolean  "q1"
     t.boolean  "q2"
     t.boolean  "q3"
@@ -49,6 +58,8 @@ ActiveRecord::Schema.define(version: 20150420225523) do
     t.boolean  "q8"
     t.boolean  "q9"
     t.boolean  "q10"
+=======
+>>>>>>> aba1a9717f854a44dec472b1f7ad4658256266fa
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

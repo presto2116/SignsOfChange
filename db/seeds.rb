@@ -7,3 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+Question.create(question: "how are you?")
+Question.create(question: "second question")
+Question.create(question: "third question")

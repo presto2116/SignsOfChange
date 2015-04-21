@@ -1,11 +1,12 @@
 class StudentsController < ApplicationController
+
 	before_action :find_student, only: [:show, :edit, :update, :destroy]
 	def index
 
 	end
 
 	def show
-
+		@question = Question.find(1)
 		@student = Student.find( params[:id])
 	end
 
@@ -27,11 +28,8 @@ class StudentsController < ApplicationController
 	end
 
 	def update
-		if @student.update( student_params )
-			redirect_to @student
-		else
-			render :edit
-		end
+		@student.update( student_params )
+		redirect_to :back
 	end
 
 	def destroy

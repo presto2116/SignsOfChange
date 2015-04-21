@@ -1,15 +1,1 @@
-<% if @student.errors.any? %>
-<ul>
-	<% @student.errors.full_messages.each do |err| %>
-	<li><%= err %></li>
-	<% end %>
-	</ul>
-<% end %>
-<h4>1. Have you ever gotten a hurtful anonymous message?</h4>
-<%= form_for @student do |f| %>
 
-	<p><%= f.label :q1 %>
-	<%= f.text_field :q1 %></p>
-	<p><%= f.submit %></p>
-
-<% end %>

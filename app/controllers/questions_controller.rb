@@ -4,7 +4,11 @@ class QuestionsController < ApplicationController
 
   end
   def show
-  	render "questions/#{params[:id]}"
+  	  	@question_response = QuestionResponse.new
+        @student = Student.find(params[:student_id])
+        @question = Question.find(params[:id])
+
+  	
   end
 
 end
