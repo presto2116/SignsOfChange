@@ -1,0 +1,15 @@
+<%= @question.question %>
+
+<%= form_for [@student, @question, @question_response] do |f| %>
+	
+	<%= f.label :response, "Yes", :value => "true" %>
+	<%= f.radio_button :response, true %>
+	<%= f.label :response, "No", :value => "false" %>
+	<%= f.radio_button :response, false %>
+	<%= f.submit %>
+
+
+<% end %>
+
+
+<%=	link_to "Next", student_question_path(@student, @question.id + 1) %>
