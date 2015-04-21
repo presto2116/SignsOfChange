@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20150420225523) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.text     "question"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,16 +38,6 @@ ActiveRecord::Schema.define(version: 20150420225523) do
     t.text     "age"
     t.integer  "location"
     t.boolean  "victim"
-    t.boolean  "q1"
-    t.boolean  "q2"
-    t.boolean  "q3"
-    t.boolean  "q4"
-    t.boolean  "q5"
-    t.boolean  "q6"
-    t.boolean  "q7"
-    t.boolean  "q8"
-    t.boolean  "q9"
-    t.boolean  "q10"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

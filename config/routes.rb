@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 root 'signs#index'
 
-resources :students do
-    resources :questions
-  end
+resources :students 
+  
+resources :questions, only: [:index, :show]
+  
 
   resources :signs
 
