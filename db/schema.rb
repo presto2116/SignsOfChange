@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150420225523) do
   end
 
   create_table "signs", force: :cascade do |t|
-    t.text     "image"
+    t.text     "sign_text"
     t.integer  "student_id"
     t.integer  "adult_id"
     t.datetime "created_at", null: false
