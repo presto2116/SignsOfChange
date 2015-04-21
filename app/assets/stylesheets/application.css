@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+ div {
+
+       width:100%;
+       height:300px;  <-----------Here
+
+
+ }
+ body {
+   /*position: relative;*/
+   color: #555;
+   font-family: 'Lato', 'Arial', sans-serif;
+   height: 100%;
+ }
+
+ /**********/
+ /* HEADER */
+ /**********/
+ {
+     width:100%;
+     height:148px;  <-----------Here
+
+ }
+
+ #page-header {
+   border-bottom: 1px solid gray;
+ }
+
+ .logo {
+   font-size: 32pt;
+ }
+
+ /*********/
+ /* NAV   */
+ /*********/
+
+ .nav {
+   float: right;
+   padding: 0;
+   margin: 10px;
+   list-style-type: none;
+ }
+
+ .nav li {
+   display: inline-block;
+   margin: 5px;
+   border: 1px solid black;
+ }
+
+ .nav a {
+   float: left;
+   width: 100px;
+   text-decoration: none;
+   background-color: white;
+   padding: 0.2em 0.6em;
+   text-align: center;
+ }
+
+ .nav a:hover {
+   background-color: #eeeeee;
+ }
+
+
+  /*********/
+  /* form */
+  /*********/
+
+ /*form.new {
+  float: left;
+}
+
+label, input {
+  display: inline-block; /* in order to define widths */
+}
+
+/*label {
+  width: 30%;
+  text-align: right; /* positions the label text beside the input */
+}
+
+/*label + input {
+  width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+  /*margin: 10px 30% 0 4%;
+}*/
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input[type='submit'] {
+  float: right;
+  margin: 10px 35% 0 0;
+}

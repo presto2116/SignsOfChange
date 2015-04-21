@@ -23,17 +23,14 @@ ActiveRecord::Schema.define(version: 20150420225523) do
 
   create_table "questions", force: :cascade do |t|
     t.text     "question"
-    t.text     "info_image"
-    t.text     "info_text"
-    t.text     "story_head"
-    t.text     "story_video"
-    t.text     "story_text"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "signs", force: :cascade do |t|
     t.text     "sign_text"
+    t.integer  "student_id"
+    t.integer  "adult_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,11 +49,6 @@ ActiveRecord::Schema.define(version: 20150420225523) do
     t.boolean  "q8"
     t.boolean  "q9"
     t.boolean  "q10"
-    t.boolean  "q11"
-    t.boolean  "q12"
-    t.boolean  "q13"
-    t.boolean  "q14"
-    t.boolean  "q15"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

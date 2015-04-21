@@ -1,4 +1,6 @@
-<h2>Signs</h2>
+
+<div><%= image_tag("sign_tag.jpg", :alt => "h") %></div>
+<h3>Signs</h3>
 <p><% @signs.each do |sign| %> <p>
 <%=sign.sign_text%>
 <%= form_tag sign_path(sign.id), method: "delete" do %>
@@ -6,6 +8,6 @@
 <%end%>
 <%end%>
 
-<%= link_to "adults", adults_path%><img src="https://www.dropbox.com/s/gnpumbx5gqqnq9d/adult3.png?dl=0" class= "Adults" alt="Adult"/>
-<%= link_to "students", students_path%><img src="https://www.dropbox.com/s/0zaa3tgd5xfhg1a/student35.png?dl=0" class="Kids" alt= "Kids" />
+<%= link_to "adults", adults_path%><%= image_tag("image_tag.png", :alt => "adult") %>
+<%= link_to "students", students_path%><%= image_tag("image_tag2.png", :alt => "student") %>
 <%= link_to "Join the movement", new_sign_path%>
