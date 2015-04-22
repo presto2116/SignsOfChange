@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Question.create(question: "Have you ever gotten a hurtful anonymous message?")
+Question.create(question: "Have you ever gotten a hurtful anonymous message?", info_image: "http://www.chicago-bureau.org/wp-content/uploads/2013/10/2013-03-05-shutterstock_108383702.jpg")
 Question.create(question: "Have you ever seen a mean comment on the Internet?/ Did you like it or think it was funny?")
 Question.create(question: "Have you ever stuck up for someone who was being picked on?")
 Question.create(question: "Has anyone ever stuck up for you when you were being picked on?")
