@@ -7,7 +7,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.text :story_head
       t.text :story_video
       t.text :story_text
-    
+
       t.timestamps null: false
     end
   end
