@@ -31,35 +31,25 @@ ActiveRecord::Schema.define(version: 20150421195736) do
 
   create_table "questions", force: :cascade do |t|
     t.text     "question"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "info_image"
+    t.text     "info_text"
+    t.text     "story_head"
+    t.text     "story_video"
+    t.text     "story_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "signs", force: :cascade do |t|
     t.text     "sign_text"
-    t.integer  "student_id"
-    t.integer  "adult_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "students", force: :cascade do |t|
-    t.text     "age"
-    t.integer  "location"
+    t.string   "age"
+    t.string   "location"
     t.boolean  "victim"
-<<<<<<< HEAD
-    t.boolean  "q1"
-    t.boolean  "q2"
-    t.boolean  "q3"
-    t.boolean  "q4"
-    t.boolean  "q5"
-    t.boolean  "q6"
-    t.boolean  "q7"
-    t.boolean  "q8"
-    t.boolean  "q9"
-    t.boolean  "q10"
-=======
->>>>>>> aba1a9717f854a44dec472b1f7ad4658256266fa
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
