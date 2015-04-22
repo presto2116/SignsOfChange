@@ -7,8 +7,12 @@ class QuestionResponsesController < ApplicationController
 	def create
 		@student = Student.find(params[:student_id])
 		@question = Question.find(params[:question_id])
-		@student.question_responses.(question_id: @question.id, response: params[:question_response][:response])
-		redirect_to :back
+		@student.question_responses.create(question_id: @question.id, response: params[:question_response][:response])
+		if @question.id < 14 
+			redirect_to student_question_path(@student, @question.id + 1)
+		else 
+			redirect_to student_path(@student)
+		end
 
 	end
 
