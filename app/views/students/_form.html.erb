@@ -6,7 +6,7 @@
 	</ul>
 <% end %>
 
-<%= form_for @student do |f| %>
+	<div class="sidebar right"><%= form_for @student do |f| %>
 	<h3>What school level are you?</h3>
 	<p><%= f.radio_button :age, "Elementary School", :checked => true %>
 	<%= f.label :age, "Elementary School", :value => "Elementary School" %>
@@ -36,4 +36,3 @@
 	<p><%= f.submit "Start Quiz"%></p>
 
 <% end %>
-
