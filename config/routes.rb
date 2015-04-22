@@ -11,7 +11,6 @@ resources :students do
     end
   end
 
-
 resources :signs
 
 resources :adults
