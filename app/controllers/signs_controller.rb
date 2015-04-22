@@ -10,7 +10,7 @@ class SignsController < ApplicationController
   end
 
   def show
-    @sign = Sign.find(params[:id])
+    @signs = Sign.all
   end
 
   # def edit
@@ -20,7 +20,7 @@ class SignsController < ApplicationController
   def create
       @sign = Sign.new(sign_params)
       if @sign.save
-      redirect_to signs_path
+      redirect_to sign_path("1")
     else
       render :new
     end
@@ -29,7 +29,7 @@ class SignsController < ApplicationController
   def destroy
     @sign = Sign.find(params[:id])
     @sign.destroy
-    redirect_to("/signs")
+    redirect_to sign_path("1")
   end
 
   private

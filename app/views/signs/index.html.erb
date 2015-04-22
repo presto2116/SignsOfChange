@@ -2,12 +2,6 @@
 <!-- <%= link_to "News", 'http://news.railstutorial.org/' %> -->
 <!-- <div><%= image_tag("sign_tag.jpg", :alt => "h") %></div> -->
 <h3>I am: </h3>
-<p><% @signs.each do |sign| %> <p>
-<%=sign.sign_text%>
-<%= form_tag sign_path(sign.id), method: "delete" do %>
-<%= submit_tag("delete this sign")%>
-<%end%>
-<%end%>
 
 <%= link_to "Adults", adults_path%><%=link_to(image_tag("image_tag.png"), adults_path)%>
 
