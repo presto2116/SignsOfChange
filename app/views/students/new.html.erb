@@ -8,38 +8,18 @@
 
 <%= form_for @student do |f| %>
 	<h3>What school level are you?</h3>
-	<div class="age">
-	<li>
-	<%= f.radio_button :age, "Elementary School", :checked => true %>
-	<%= f.label :age, "Elementary School", :value => "Elementary School" %>
-	<%= f.radio_button :age, "Middle School" %>
-	<%= f.label :age, "Middle School", :value => "Middle School" %>
-	<%= f.radio_button :age, "High School" %>
-	<%= f.label :age, "High School", :value => "High School" %>
-	</li>
-	</div>
+	<%= f.select :age, options_for_select([['Elementary School', 1], ['Middle School', 2], ['High School', 3]]) %>
 	<h3>Which region do you live in?</h3>
 	
 	<div class="student_location">
-	<%= image_tag("student_location_map.png", :alt => "student map") %>
+	<%= image_tag("student_location_map.jpg", :alt => "student map") %>
 	</div>
-
-	<%= f.radio_button :location, "West Coast", :checked => true %>
-	<%= f.label :location, "red", :value => "West Coast" %>
-	<%= f.radio_button :location, "South" %>
-	<%= f.label :location, "orange", :value => "South" %>
-	<%= f.radio_button :location, "Mid West" %>
-	<%= f.label :location, "blue", :value => "Mid West" %>
-	<%= f.radio_button :location, "North East" %>
-	<%= f.label :location, "green", :value => "North East" %>
+	<%= f.select :location, options_for_select([['Red', 1], ['Light Blue', 2], ['Dark Blue', 3], ['Green', 4],['Orange', 5], ['Pink', 6]]) %>
 	
 	<h3>Have you ever been a victim of cyber bullying?</h3>
-	<p><%= f.radio_button :victim, true, :checked => true %>
-	<%= f.label :victim, "Yes", :value => "true" %>
-	<%= f.radio_button :victim, false %>
-	<%= f.label :victim, "No", :value => "false" %></p>
+	<%= f.select :victim, options_for_select([['Yes', true], ['No', false]]) %>
 	
 	
-	<p><%= f.submit %></p>
+	<p><%= f.submit "Take The Quiz" %></p>
 
 <% end %>
