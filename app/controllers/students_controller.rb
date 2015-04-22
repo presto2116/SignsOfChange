@@ -12,8 +12,8 @@ class StudentsController < ApplicationController
 
 	def new
 		@student = Student.new
-	end	
-	
+	end
+
 	def create
 		@student= Student.new (student_params)
 		if @student.save
@@ -33,7 +33,9 @@ class StudentsController < ApplicationController
 	end
 
 	def destroy
-
+		@sign = Sign.find(params[:id])
+    @sign.destroy
+    redirect_to sign_path("1")
 	end
 
 	private
