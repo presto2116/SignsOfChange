@@ -1,116 +1,31 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
- div {
 
-       width:100%;
-       height:300px;
-
-
- }
  body {
    /*position: relative;*/
    color: #555;
    font-family: 'Lato', 'Arial', sans-serif;
-   height: 100%;
- }
-
- /**********/
- /* HEADER */
- /**********/
- head{
-     width:100%;
-     height:148px;
-
- }
-
- #page-header {
-   border-bottom: 1px solid gray;
- }
-
- .logo {
-   font-size: 32pt;
- }
-
- /*********/
- /* NAV   */
- /*********/
-
- .nav {
-   float: right;
-   padding: 0;
-   margin: 10px;
-   list-style-type: none;
- }
-
- .nav li {
-   display: inline-block;
-   margin: 5px;
-   border: 1px solid black;
- }
-
- .nav a {
-   float: left;
-   width: 100px;
-   text-decoration: none;
-   background-color: white;
-   padding: 0.2em 0.6em;
-   text-align: center;
- }
-
- .nav a:hover {
-   background-color: #eeeeee;
+   height: 50%;
  }
 
 .student_location img{
   width: 400px;
 }
 
+.header-wrap{
+    background-size: cover;
+    background-position:center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
 .age li{
   display: inline;
   position: relative;
 }
-  /*********/
-  /* form */
-  /*********/
 
- /*form.new {
-  float: left;
-}
-
-label, input {
-  display: inline-block; /* in order to define widths
-}*/
-
-/*label {
-  width: 30%;
-  text-align: right; /* positions the label text beside the input
-}*/
-
-/*label + input {
-  width: 30%;
-    /* large margin-right to force the next element to the new-line
-       and margin-left to create a gutter between the label and input */
-  /*margin: 10px 30% 0 4%;
-}*/
-
-/* only the submit button is matched by this selector,
-   but to be sure you could use an id or class for that button */
 .main_header image_tag{
   width: 40px;
 }
