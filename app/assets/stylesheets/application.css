@@ -94,12 +94,12 @@
 }
 
 label, input {
-  display: inline-block; /* in order to define widths 
+  display: inline-block; /* in order to define widths
 }*/
 
 /*label {
   width: 30%;
-  text-align: right; /* positions the label text beside the input 
+  text-align: right; /* positions the label text beside the input
 }*/
 
 /*label + input {
@@ -111,6 +111,10 @@ label, input {
 
 /* only the submit button is matched by this selector,
    but to be sure you could use an id or class for that button */
+.main_header image_tag{
+  width: 40px;
+}
+
 input[type='submit'] {
   float: right;
   margin: 10px 35% 0 0;
