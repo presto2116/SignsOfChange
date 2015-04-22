@@ -14,7 +14,7 @@
 	<%= f.label :age, "Middle School", :value => "Middle School" %>
 	<%= f.radio_button :age, "High School" %>
 	<%= f.label :age, "High School", :value => "High School" %></p>
-	
+
 	<h3>Which region do you live in?</h3>
 	<%= image_tag("student_location_map.png", :alt => "student map") %>
 	<p><%= f.radio_button :location, "West Coast", :checked => true %>
@@ -25,14 +25,14 @@
 	<%= f.label :location, "blue", :value => "Mid West" %>
 	<%= f.radio_button :location, "North East" %>
 	<%= f.label :location, "green", :value => "North East" %></p>
-	
+
 	<h3>Have you ever been a victim of cyber bullying?</h3>
 	<p><%= f.radio_button :victim, true, :checked => true %>
 	<%= f.label :victim, "Yes", :value => "true" %>
 	<%= f.radio_button :victim, false %>
 	<%= f.label :victim, "No", :value => "false" %></p>
-	
-	
-	<p><%= f.submit %></p>
+
+
+	<p><%= f.submit "Start Quiz"%></p>
 
 <% end %>

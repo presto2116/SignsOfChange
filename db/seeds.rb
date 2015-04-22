@@ -7,17 +7,32 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Question.create(question: "Have you ever gotten a hurtful anonymous message?")
-Question.create(question: "Have you ever seen a mean comment on the Internet?/ Did you like it or think it was funny?")
-Question.create(question: "Have you ever stuck up for someone who was being picked on?")
-Question.create(question: "Has anyone ever stuck up for you when you were being picked on?")
-Question.create(question: "hen others are mean, do you tell them they are being mean?")
-Question.create(question: "Have you ever gone out of your way to show kindness to someone who was being picked on?")
-Question.create(question: "Do you ever feel scared to go somewhere?")
-Question.create(question: "Have you ever felt like you might get physically hurt by others?")
-Question.create(question: "Do you feel like you have an adult you can talk to if you needed their help?")
-Question.create(question: "Have you ever felt like getting revenge for something someone said to you?")
-Question.create(question: "Do you think social media sites and apps like Instagram, Snapchat, Facebook, Kik, are places where bullying happens often?")
-Question.create(question: "Are your parents monitoring your cell phone and internet activity in any way?")
-Question.create(question: "Do you think your parents have the right to monitor this activity?")
-Question.create(question: "How much time do you spend thinking about what you post about others on the internet or in text messages?")
+Question.create(question: "Have you ever gotten a hurtful anonymous message?", info_image:, info_text: "The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:"Emily, 16", story_video:, story_text:)
+
+Question.create(question: "Have you ever seen a mean comment on the Internet and liked it or thought it was funny?", info_image:, info_text: "Anonymous messages are hurtful because when you receive a mean message but don’t know who sent it, it can seem like EVERYONE feels that way about you. It can feel a lot worse than when you know who said it and why they feel that way.
+
+Before you send someone an anonymous message, or post a mean anonymous comment about someone, think about WHY you want to do that to them. If you have an issue with someone, try talking through it with them instead. It takes a lot of courage to discuss your problems face to face, but it’s much easier to understand each other that way.
+
+Remember, that nothing online is anonymous. Anything can be tracked on your phones, internet, and computers. Don't send anything anonymously, you could face criminal penalties for it later. If someone is bullying you anonymously, ask for an adult to help you trace the person behind it.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Have you ever stuck up for someone who was being picked on?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Has anyone ever stuck up for you when you were being picked on?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Have you ever gone out of your way to show kindness to someone who was being picked on?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Do you ever feel scared to go somewhere?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Have you ever felt like you might get physically hurt by others?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Do you feel like you have an adult you can talk to if you needed their help?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Have you ever felt like getting revenge for something someone said to you?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Do you think social media sites and apps like Instagram, Snapchat, Facebook, Kik, are places where bullying happens often?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Are your parents monitoring your cell phone and internet activity in any way?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "Do you think your parents have the right to monitor this activity?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
+
+Question.create(question: "How much time do you spend thinking about what you post about others on the internet or in text messages?", info_image:, info_text:"The funny part about cyber-bullying is that hardly anyone is totally innocent! Usually even targets of cyber-bullies have been mean to others online at some point. This means that everyone has been a bully, and everyone has been a victim. Remember to treat others the way you would expect to be treated, even if they're not being nice in the moment.", story_head:, story_video:, story_text:)
