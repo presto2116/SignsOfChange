@@ -84,13 +84,13 @@
 }
 
 label, input {
-  display: inline-block; /* in order to define widths */
-}
+  display: inline-block; /* in order to define widths 
+}*/
 
 /*label {
   width: 30%;
-  text-align: right; /* positions the label text beside the input */
-}
+  text-align: right; /* positions the label text beside the input 
+}*/
 
 /*label + input {
   width: 30%;
