@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
 	end
 
 	def show
+		@question = Question.find(1)
 		@student = Student.find( params[:id])
 	end
 
