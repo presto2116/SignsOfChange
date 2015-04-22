@@ -1,7 +1,7 @@
 <div><%= link_to image_tag("sign_tag.jpg", :alt => "h"),signs_path %></div>
 <!-- <%= link_to "News", 'http://news.railstutorial.org/' %> -->
 <!-- <div><%= image_tag("sign_tag.jpg", :alt => "h") %></div> -->
-<h3>Signs</h3>
+<h3>I am: </h3>
 <p><% @signs.each do |sign| %> <p>
 <%=sign.sign_text%>
 <%= form_tag sign_path(sign.id), method: "delete" do %>

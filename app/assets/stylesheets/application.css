@@ -77,7 +77,14 @@
    background-color: #eeeeee;
  }
 
+.student_location img{
+  width: 400px;
+}
 
+.age li{
+  display: inline;
+  position: relative;
+}
   /*********/
   /* form */
   /*********/
