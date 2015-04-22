@@ -1,16 +1,30 @@
 
 
-
+<div class="question">
 <%= @question.question %>
 
 <%= form_for [@student, @question, @question_response] do |f| %>
-	
+
 	<%= f.radio_button :response, true, :checked => true %>
 	<%= f.label :response, "Yes", :value => "true" %>
 	<%= f.radio_button :response, false %>
 	<%= f.label :response, "No", :value => "false" %>
-	
+
 	<%= f.submit "submit"%>
 
 <% end %>
+</div>
 
+
+
+<div class="info">
+<img src="<%=@question.info_image%>" alt="kids bullying"/>
+<%= @question.info_text %>
+</div>
+
+
+<div class="story">
+<%= @question.story_head %>
+<%= @question.story_video %>
+<%= @question.story_text %>
+</div>
