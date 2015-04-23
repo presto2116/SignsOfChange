@@ -1,0 +1,10 @@
+
+<br>
+<%= link_to "Add your own selfie sign", new_sign_path %>
+<br>
+<%= link_to "Back to resources", students_path %>
+<br>
+
+<% @signs.each do |sign| %>
+  <img src="<%= sign.sign_text %>" class="thumbnail" height="42" width="42"/>
+  <%end%>
