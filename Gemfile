@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'httparty'
  #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "bootstrap-sass"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
