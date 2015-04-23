@@ -34,6 +34,6 @@ class SignsController < ApplicationController
 
   private
     def sign_params
-      return params[:sign].permit(:sign_text)
+      return params[:sign].permit(:sign_source)
     end
 end
