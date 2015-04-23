@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
  body {
    /*position: relative;*/
    color: #555;
@@ -61,12 +61,16 @@ div#info img{
 }
 div#story {
   display: inline-block;
+  border-bottom: 1px solid black;
 }
 
 .story1{
   border-bottom: 1px solid black;
 }
-
+.story{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
 .storyhead {
   position: right;
   float: right;
@@ -204,4 +208,3 @@ input[type='submit'] {
   font-size: 1em;
   margin-left: 50px
 }
-
