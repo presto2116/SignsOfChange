@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 
-
+gem 'httparty'
  #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "bootstrap-sass"
 
