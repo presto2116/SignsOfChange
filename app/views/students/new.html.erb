@@ -1,3 +1,4 @@
+<div class="student">
 <% if @student.errors.any? %>
 <ul>
 	<% @student.errors.full_messages.each do |err| %>
@@ -25,7 +26,8 @@
 	<h3>Have you ever been a victim of cyber bullying?</h3>
 	<%= f.select :victim, options_for_select([['Yes', true], ['No', false]]) %>
 	
-	
-	<p><%= f.submit "Take The Quiz" %></p>
-
+	<div class="new-student">
+	<p><%= f.submit "Take The Quiz", :class => "student-button" %></p>
+</div>
+</div>
 	<% end %>
