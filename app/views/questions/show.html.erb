@@ -1,4 +1,4 @@
-<head><div id="student_img"><%= link_to image_tag("st_img.jpg", :alt   => "h"),signs_path %></div></head>
+<head><div id="student_img"><%= link_to image_tag("st_img.jpg", :alt   => "h"),students_path %></div></head>
 <br>
 <br>
 <br>
@@ -18,7 +18,7 @@
 	<%= f.label :response, "No", :value => "false" %>
 
 	<%= f.submit ("Next Question"), :class => "question-button" %>
-	
+
 
 <% end %>
 
@@ -44,4 +44,3 @@ src="<%=@question.story_video%>">
 </div>
 
 <footer><h1>hello</h1></footer>
-
