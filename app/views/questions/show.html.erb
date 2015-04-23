@@ -9,7 +9,7 @@
 
 
 <%= @question.question %>
-
+<p>Don't worry- we won't share your answers with anyone</p>
 <%= form_for [@student, @question, @question_response] do |f| %>
 
 	<%= f.radio_button :response, true, :checked => true  %>
@@ -18,9 +18,10 @@
 	<%= f.label :response, "No", :value => "false" %>
 
 	<%= f.submit ("Next Question"), :class => "submit-button" %>
-	
+
 
 <% end %>
+
 
 
 
