@@ -25,21 +25,24 @@
 	<%= f.label :response, "No", :value => "false" %>
 
 	<%= f.submit ("Next Question"), :class => "submit-button" %>
-	
+
 
 <% end %>
 
 
 
 <br>
-<div class="info">
+<div id="info">
 <img src="<%=@question.info_image%>" height="200" width="200" alt="kids bullying"/>
-<%= @question.info_text %>
 </div>
+<br>
+<br>
+<br>
+<%= @question.info_text %>
 <br>
 
 
-<div class="story">
+<div id="story">
 <p class="storyhead"><%= @question.story_head %></p>
 <br>
 <iframe width="320" height="215"
@@ -48,9 +51,4 @@ src="<%=@question.story_video%>">
 <p><%= @question.story_text %></p>
 </div>
 
-</div>
-
  <footer><div id="footer-wrap"><%= image_tag("student_footer.jpg", :alt => "student_footer") %></div></footer>
-
-
-
