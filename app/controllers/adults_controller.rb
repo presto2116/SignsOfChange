@@ -1,10 +1,9 @@
 gem 'httparty'
 
-class AdultsController < ApplicationController
+  class AdultsController < ApplicationController
 
-  def index
-    @article = Adult.article
-    @headline = Adult.headline
+    def index
+        @articles = Adult.articles
+    end
+
   end
-
-end

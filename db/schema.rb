@@ -41,9 +41,9 @@ ActiveRecord::Schema.define(version: 20150421195736) do
   end
 
   create_table "signs", force: :cascade do |t|
-    t.text     "sign_text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "sign_source"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "students", force: :cascade do |t|

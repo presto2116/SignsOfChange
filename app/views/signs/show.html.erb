@@ -1,10 +1,12 @@
 
 <br>
-<%= link_to "Add your own selfie sign", new_sign_path %>
-<br>
-<%= link_to "Back to resources", students_path %>
+<%= link_to(image_tag("take_a_selfie_image.jpg"), new_sign_path ) %>
+
 <br>
 
-<% @signs.each do |sign| %>
-  <img src="<%= sign.sign_text %>" class="thumbnail" height="42" width="42"/>
+<% @signs.reverse_each do |sign| %>
+  <img src="<%=sign.sign_source%>" class="thumbnail" height="42" width="42"/>
   <%end%>
+
+<br>
+  <%= link_to(image_tag("resources_button.jpg"), students_path) %>

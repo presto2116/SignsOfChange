@@ -72,7 +72,7 @@ div#header-wrap a img {
 
     text-align: left;
     padding:15px 40px;
-    max-width: 680px; 
+    max-width: 680px;
     margin-left: auto;
     margin-right: auto;
     color: #6B6C70 ;
@@ -109,11 +109,11 @@ div#footer-wrap img{
   background: #9900CC;
   border:0;
   white-space: pre-wrap;
-  
+
   display: block;
 }
 
- 
+
 .question .submit-button {
   color: white;
   text-align: center;
@@ -152,7 +152,7 @@ input[type='submit'] {
 
   .thumbnail:active {
     position:absolute;
-    top: 125px;
+    top: 625px;
     left: 300px;
     width:500px;
     height:auto;
