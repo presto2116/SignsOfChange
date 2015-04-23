@@ -1,15 +1,10 @@
 class Adult < ActiveRecord::Base
+  attr_accessor :link, :title
 
-  def self.article
+  def self.articles
+    api_key = "umtf9ebhqf3njtshvcwt6bu6"
     search = "cyber bullying"
-    @article = HTTParty.get("http://api.usatoday.com/open/articles?tag=bullying&api_key=umtf9ebhqf3njtshvcwt6bu6").parsed_response["rss"]["channel"]["item"]
-
+    @articles = HTTParty.get("http://api.usatoday.com/open/articles?keyword=cyberbully&api_key=#{api_key}").parsed_response["rss"]["channel"]["item"]
   end
-
-  def self.headline
-    search = "cyber bullying"
-    @headline = HTTParty.get("http://api.usatoday.com/open/articles?tag=bullying&api_key=umtf9ebhqf3njtshvcwt6bu6").parsed_response["rss"]["channel"]["item"]["title"]
-  end
-
 
 end
