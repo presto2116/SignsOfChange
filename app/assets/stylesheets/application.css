@@ -16,6 +16,7 @@
         display: block;
 }
 
+
 .adult_header a img{
       margin-left: auto;
       margin-right: auto;
@@ -37,6 +38,27 @@
   float: right;
   margin-right: 50px;
   text-decoration: none;
+}
+div#info img{
+  position: right;
+  display: inline-block;
+  float: right;
+  max-height: 300px;
+  width: 350px;
+
+}
+div#story {
+  display: inline-block;
+}
+
+.story1{
+  border-bottom: 1px solid black;
+}
+
+.storyhead {
+  position: right;
+  float: right;
+  padding:15px 40px;
 }
 
 span#adult-logo a img{
