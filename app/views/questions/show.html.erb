@@ -8,6 +8,13 @@
 <br>
 <br>
 <div class="question">
+<% if @question.id <10 %>
+		<div class="question-num-9">Q#<%="#{@question.id}"%></div>
+<% else %>
+	<div class="question-num-10">Q#<%="#{@question.id}"%></div>
+	<% end %>
+
+
 <%= @question.question %>
 
 <%= form_for [@student, @question, @question_response] do |f| %>
@@ -17,7 +24,7 @@
 	<%= f.radio_button :response, false %>
 	<%= f.label :response, "No", :value => "false" %>
 
-	<%= f.submit ("Next Question"), :class => "question-button" %>
+	<%= f.submit ("Next Question"), :class => "submit-button" %>
 	
 
 <% end %>
@@ -43,5 +50,6 @@ src="<%=@question.story_video%>">
 
 </div>
 
-<footer><h1>hello</h1></footer>
+ <footer><div id="footer-wrap"><%= image_tag("student_footer.jpg", :alt => "student_footer") %></div></footer>
+
 

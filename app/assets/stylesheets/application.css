@@ -56,10 +56,41 @@ div#header-wrap a img {
 
 
 }
+div#footer-wrap img{
+  max-height: 500px;
+  width: 100%;
+}
 
+.question .question-num-9 {
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  border-radius: 100%;
+  background: #9900CC;
+  
+  border:0;
+  white-space: pre-wrap;
+  display: block;
+}
+.question .question-num-10 {
+  color: white;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  border-radius: 100%;
+  background: #9900CC;
+  border:0;
+  white-space: pre-wrap;
+  
+  display: block;
+}
 
  
-.question .question-button {
+.question .submit-button {
   color: white;
   text-align: center;
   width: 100px;
@@ -69,6 +100,7 @@ div#header-wrap a img {
   background: #9900CC;
   white-space:pre-wrap;
   border:0;
+  float: right;
 }
 
 .new-student .student-button {
@@ -81,6 +113,7 @@ div#header-wrap a img {
   background: #9900CC;
   white-space:pre-wrap;
   border:0;
+}
 
 input[type='submit'] {
   float: right;
