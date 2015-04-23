@@ -67,4 +67,20 @@ div#header-wrap a img {
   background: #9900CC;
   white-space:pre-wrap;
   border:0;
+
+input[type='submit'] {
+  float: right;
+  margin: 10px 35% 0 0;
+  }
+
+
+  .thumbnail:active {
+    position:absolute;
+    top: 125px;
+    left: 300px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+
 }
