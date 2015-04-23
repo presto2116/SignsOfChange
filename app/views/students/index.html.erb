@@ -1,18 +1,29 @@
-<div class="student"
+
 <h2><%= link_to "Try our interactive quiz and discover more!", new_student_path %> </h2>
 
 
 <h3>Learn about cyberbullying from real people
 and see how you can make a difference</h3>
 
-
-	<iframe width="210" height="157"
-	src="https://www.youtube.com/embed/-5PZ_Bh-M6o">
-	</iframe>
-	<iframe width="210" height="157"
-	src="https://www.youtube.com/embed/BrqRRQD-sz0">
-	</iframe>
-
 <h3><%= link_to "Take a Selfie to Get Involved", sign_path("1")%></h3>
 <br>
-</div>
+
+
+
+
+
+	<% @questions.each do |question| %>
+
+
+
+		<div class="story">
+		<p class="storyhead"><%= question.story_head %></p>
+		<br>
+		<iframe width="320" height="215"
+		src="<%=question.story_video%>">
+		</iframe>
+		<p><%= question.story_text %></p>
+		</div>
+
+	<%end%>
+

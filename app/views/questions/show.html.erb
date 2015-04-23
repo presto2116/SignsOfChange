@@ -17,18 +17,24 @@
 
 
 
-
+<br>
 <div class="info">
 <img src="<%=@question.info_image%>" height="200" width="200" alt="kids bullying"/>
 <%= @question.info_text %>
 </div>
+<br>
 
 
 <div class="story">
-<%= @question.story_head %>
-<%= @question.story_video %>
-<%= @question.story_text %>
+<p class="storyhead"><%= @question.story_head %></p>
+<br>
+<iframe width="320" height="215"
+src="<%=@question.story_video%>">
+</iframe>
+<p><%= @question.story_text %></p>
 </div>
+
 </div>
 
 <footer><h1>hello</h1></footer>
+
