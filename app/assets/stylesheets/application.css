@@ -192,7 +192,6 @@ input[type='submit'] {
     height:auto;
     display:block;
     z-index:999;
-
 }
 .sign p{
   font-size: 18px;
@@ -204,4 +203,6 @@ input[type='submit'] {
   font-size: 1em;
   margin-left: 50px
 }
-
+.adult iframe {
+  margin: 30px;
+}
