@@ -9,16 +9,19 @@
    height: 50%;
  }
 
-.student_location img{
-  width: 400px;
+div#student_img a img{
+        position: absolute;
+
+
+        left: 35%;
+        top: 40%;
+        margin-left: -50px; /*half the image width*/
+        margin-top: -50px; /*half the image height*/
 }
 
-.header-wrap{
-    background-size: cover;
-    background-position:center;
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
+
+div#header-wrap a img {
+  width: 100%;
 }
 
 .age li{
