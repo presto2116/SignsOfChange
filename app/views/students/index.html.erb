@@ -1,10 +1,14 @@
-<div id="student_img"><%= link_to image_tag("st_img.jpg", :alt   => "h"),students_path %></div><br/>
-<br>
-<br>
-<br>
-<br>
-<h2><%= link_to "Try our interactive quiz and discover more!", new_student_path %> </h2>
+<div class="student">
+<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
 
+<h1>Learn about cyberbullying from real people and see how you can make a difference</h1>
+
+<div class="take-quiz">
+	<%= link_to "Take The Quiz",new_student_path %></div>
+
+<div class="purple"><h2>Try our interactive quiz and discover more!</h2></div>
+
+<br>
 
 <h3>Learn about cyberbullying from real people
 and see how you can make a difference</h3>
@@ -30,3 +34,5 @@ and see how you can make a difference</h3>
 		</div>
 
 	<%end%>
+	</div>
+	<footer><div id="footer-wrap"><%= image_tag("student_footer.jpg", :alt => "student_footer") %></div></footer>

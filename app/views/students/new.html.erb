@@ -6,25 +6,22 @@
 	<% end %>
 	</ul>
 <% end %>
-<div id="student_img"><%= link_to image_tag("st_img.jpg", :alt   => "h"),students_path %></div><br/>
-<br>
-<br>
-<br>
-<br>
+<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
+
 
 <%= form_for @student do |f| %>
-	<h3>What school level are you?</h3>
+	<h3>1. What school level are you?</h3>
 	<%= f.select :age, options_for_select([['Elementary School', 1], ['Middle School', 2], ['High School', 3]]) %>
-	<h3>Which region do you live in?</h3>
+	<h3>2. Which region do you live in?</h3>
 
-	<div class="student_location">
+	<div class="student-location">
 	<%= image_tag("student_location_map.jpg", :alt => "student map") %>
 	</div>
 
 	<%= f.select :location, options_for_select([['Red', 1], ['Light Blue', 2], ['Dark Blue', 3], ['Green', 4],['Orange', 5], ['Pink', 6]]) %>
 
 
-	<h3>Have you ever been a victim of cyber bullying?</h3>
+	<h3>3. Have you ever been a victim of cyber bullying?</h3>
 	<%= f.select :victim, options_for_select([['Yes', true], ['No', false]]) %>
 
 	<div class="new-student">
@@ -32,3 +29,4 @@
 </div>
 </div>
 	<% end %>
+	<footer><div id="footer-wrap"><%= image_tag("student_footer.jpg", :alt => "student_footer") %></div></footer>

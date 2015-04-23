@@ -9,27 +9,51 @@
    height: 50%;
  }
 
-div#student_img a img{
-        position: absolute;
-        margin: auto;
-
-        display: inline-block;
-        left: 35%;
-        top: 40%;
-        margin-left: -50px; /*half the image width*/
-        margin-top: -50px; /*half the image height*/
+.student_header a img{
+      margin-left: auto;
+      margin-right: auto;
+       width: 50%;
+        display: block;
 }
 
-
+.adult_header a img{
+      margin-left: auto;
+      margin-right: auto;
+       width: 75%;
+        display: block;
+}
+.take-quiz a{
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  border-radius: 50%;
+  background: #9900CC;
+  white-space:pre-wrap;
+  border:0;
+  padding: 15px;
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+  text-decoration: none;
+}
 
 span#adult-logo a img{
-        padding-left: 10px;
+        padding-left: 20px;
+        display: inline-block;
+        margin-bottom: 30px;
 
 
 }
 span#students-logo a img{
-        padding-left: 100px;
-
+        float: right;
+        padding-right: 20px;
+        display: inline-block;
+        margin-bottom: 30px;
+}
+.student-location img{
+  width: 400px;
 }
 
 div#header-wrap a img {
@@ -57,7 +81,8 @@ div#header-wrap a img {
 
 }
 div#footer-wrap img{
-  max-height: 500px;
+  margin-top: 50px;
+  max-height: 400px;
   width: 100%;
 }
 
@@ -70,7 +95,6 @@ div#footer-wrap img{
   font-size: 50px;
   border-radius: 100%;
   background: #9900CC;
-  
   border:0;
   white-space: pre-wrap;
   display: block;
@@ -106,15 +130,20 @@ div#footer-wrap img{
 .new-student .student-button {
   color: white;
   text-align: center;
-  width: 100px;
-  height: 100px;
-  font-size: 20px;
+  width: 180px;
+  height: 180px;
+  font-size: 40px;
   border-radius: 50%;
   background: #9900CC;
   white-space:pre-wrap;
   border:0;
-}
+  float: left;
+  margin-left: 30px;
 
+}
+.purple {
+  color: #9900CC;
+}
 input[type='submit'] {
   float: right;
   margin: 10px 35% 0 0;
@@ -130,4 +159,14 @@ input[type='submit'] {
     display:block;
     z-index:999;
 
+}
+.sign p{
+  font-size: 18px;
+}
+.sign p:nth-child(1){
+  font-size: 28px;
+}
+.student select{
+  font-size: 1em;
+  margin-left: 50px
 }
