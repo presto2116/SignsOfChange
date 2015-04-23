@@ -11,13 +11,27 @@
 
 div#student_img a img{
         position: absolute;
+        margin: auto;
 
-
+        display: inline-block;
         left: 35%;
         top: 40%;
         margin-left: -50px; /*half the image width*/
         margin-top: -50px; /*half the image height*/
 }
+
+
+
+span#adult-logo a img{
+        padding-left: 10px;
+
+
+}
+span#students-logo a img{
+        padding-left: 100px;
+
+}
+
 div#header-wrap a img {
   width: 100%;
 }
