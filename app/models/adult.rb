@@ -1,5 +1,4 @@
 class Adult < ActiveRecord::Base
-  attr_accessor :link, :title
 
   def self.articles
     api_key = "umtf9ebhqf3njtshvcwt6bu6"

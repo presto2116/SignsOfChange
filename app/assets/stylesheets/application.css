@@ -118,13 +118,14 @@ input[type='submit'] {
 }
 
 .thumbnail:active {
-  position: absolute;
-  top: 600px;
-  left: 300px;
-  width:500px;
-  height:auto;
-  display:block;
-  z-index:999;
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    width:500px;
+    height:auto;
+    display:inline;
+    z-index:999;
+
 }
 
 .sign p{
@@ -232,12 +233,14 @@ div#info {
   border-bottom: 1px solid black;
 }
 
+
 div#info img{
   display: inline-block;
   float: right;
   max-height: 300px;
   width: 350px;
 }
+
 
 div#story {
   display: inline-block;
