@@ -1,14 +1,14 @@
-
 <div class="adult">
-<div class="adult_header"><%= link_to image_tag("adult_header.jpg", :alt   => "h"), adults_path %></div>
+
+	<div class="adult_header"><%= link_to image_tag("adult_header.jpg", :alt   => "h"), adults_path %></div>
 
 
-<div class="statistics">
-	<h3>Statistics</h3>
-	<ul>
-	  <li>Nearly one in four students say they have been the victim of cyberbullying at some point.</li>
-	  <li>Joseph Wright, a pediatrician at Children's National Health System in Washington, D.C., says that by third grade, 75% of kids have been exposed to bullying, the majority as bystanders. "It's a pervasive behavior," he says.</li>
-	</ul>
+	<div class="statistics">
+		<h3>Statistics</h3>
+			<ul>
+		 	 <li>Nearly one in four students say they have been the victim of cyberbullying at some point.</li>
+		 	 <li>Joseph Wright, a pediatrician at Children's National Health System in Washington, D.C., says that by third grade, 75% of kids have been exposed to bullying, the majority as bystanders. "It's a pervasive behavior," he says.</li>
+		</ul>
 	</div>
 
 
@@ -16,8 +16,8 @@
 
  <h3>News</h3>
     <p><% @articles.each do |article| %>
-    <a href="<%=article["link"]%>"><%=article["title"]%></a></p>
-    <p><%= article["description"] %></p>
+	    <a href="<%=article["link"]%>"><%=article["title"]%></a></p>
+	    <p><%= article["description"] %></p>
     <%end%>
 
 
@@ -25,13 +25,12 @@
 
 
 <div class="selfie">
-
-<%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%>
-<p>Click Above to Enter</p>
+	<%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%>
+	<p>Click Above to Enter</p>
 </div>
 
 <h3>Video Resources</h3>
-		<div class="video-resources">
+	<div class="video-resources">
 		<iframe width="420" height="315"
 		src="https://www.youtube.com/embed/-5PZ_Bh-M6o">
 		</iframe>
@@ -50,8 +49,10 @@
 		<iframe width="420" height="315"
 		src="https://www.youtube.com/embed/e_Eq-dLHluA">
 		</iframe>
-		</div>
+	</div>
 
- <footer><div id="footer-wrap"><%= link_to image_tag("adult_footer.jpg", :alt => "adult_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>
+ <footer>
+ 	<div id="footer-wrap"><%= link_to image_tag("adult_footer.jpg", :alt => "adult_footer"), "http://www.stopcyberbullying.org/index2.html" %></div>
+ </footer>
 	
 </div>

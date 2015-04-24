@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
-
 	before_action :find_student, only: [:show, :edit, :update, :destroy]
+	
 	def index
 		@questions = Question.all
 	end
@@ -36,5 +36,4 @@ class StudentsController < ApplicationController
 		def student_params
 			params.require(:student).permit(:age, :location, :victim)
 		end
-
 end

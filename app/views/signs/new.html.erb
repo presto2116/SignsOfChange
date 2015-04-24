@@ -1,6 +1,15 @@
+
+<% if @sign.errors.any? %>
+	<ul>
+		<% @sign.errors.full_messages.each do |err| %>
+		<li><%= err %></li>
+	<% end %>
+	</ul>
+<% end %>
+<div class="new-sign">
 <%= form_for @sign do |f| %>
   <%= f.label "Upload a photo" %>
   <%= f.text_field :sign_source %>
-
-  <%= f.submit %>
+  <%= f.submit ("Create a Sign"), :class => "submit-button" %>
 <% end %>
+</div>

@@ -1,33 +1,33 @@
 <div class="student">
-<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
 
-<h1>Learn about cyberbullying from real people and see how you can make a difference</h1>
+	<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
 
-<div class="take-quiz">
-	<%= link_to "Click Here to Start",new_student_path %>
+	<h1>Learn about cyberbullying from real people and see how you can make a difference</h1>
 
-<div class="purple"><h2>Try our interactive quiz and discover more!</h2></div>
-</div>
-<h3>Learn about cyberbullying from real people
-and see how you can make a difference</h3>
-<div class="selfie">
+	<div class="take-quiz">
+		<%= link_to "Click Here to Start",new_student_path %>
+		<div class="purple"><h2>Try our interactive quiz and discover more!</h2></div>
+	</div>
 
-<%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1") ) %>
-<p>Click Above to Enter</p>
-</div>
+	<h3>Learn about cyberbullying from real people
+	and see how you can make a difference</h3>
+	
+	<div class="selfie">
+		<%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1") ) %>
+		<p>Click Above to Enter</p>
+	</div>
 
 	<% @questions.each do |question| %>
 
 		<div class="story1">
 		<p class="storyhead1"><h1><%= question.story_head %></h1></p>
-
 		<iframe width="320" height="215"
 		src="<%=question.story_video%>">
 		</iframe>
 		<p><%= question.story_text %></p>
 		</div>
-
 	<%end%>
-	</div>
-	<footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>
+</div>
+
+<footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>
 	

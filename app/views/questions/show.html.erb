@@ -1,46 +1,50 @@
-
 <div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
+
 <div class="question">
-<div class="question-box">
-<% if @question.id <10 %>
+
+	<div id="info">
+		<img src="<%=@question.info_image%>" height="200" width="200" alt="kids bullying"/>
+		<%= @question.info_text %>
+	</div>
+
+
+	<div class="story">
+		<h1><%= @question.story_head %></h1>
+
+	<div class="story-video">
+		<iframe width="320" height="215" src="<%=@question.story_video%>">
+		</iframe>
+	</div>
+	<div class="story-text"><p><%= @question.story_text %></p></div>
+	</div>
+
+	<div class="question-box">
+	<% if @question.id <10 %>
 		<div class="question-num-9">Q#<%="#{@question.id}"%></div>
-<% else %>
-	<div class="question-num-10">Q#<%="#{@question.id}"%></div>
+	<% else %>
+		<div class="question-num-10">Q#<%="#{@question.id}"%></div>
 	<% end %>
 
 
-<h2><%= @question.question %></h2>
+	<h2><%= @question.question %></h2>
 
-<%= form_for [@student, @question, @question_response] do |f| %>
+	<%= form_for [@student, @question, @question_response] do |f| %>
 
-	<%= f.radio_button :response, true, :checked => true  %>
-	<%= f.label :response, "Yes", :value => "true" %>
-	<%= f.radio_button :response, false %>
-	<%= f.label :response, "No", :value => "false" %>
+		<%= f.radio_button :response, true, :checked => true  %>
+		<%= f.label :response, "Yes", :value => "true" %>
+		<%= f.radio_button :response, false %>
+		<%= f.label :response, "No", :value => "false" %>
+		
+		<% if @question.id <11 %>
+			<%= f.submit ("Next Question"), :class => "submit-button" %>
+		<% else %>
+			<%= f.submit ("Back to Resources"), :class => "submit-button" %>
+		<% end %>
 
-	<%= f.submit ("Next Question"), :class => "submit-button" %>
-<p><div class="small">Don't worry- we won't share your answers with anyone</div></p>
+	<p><div class="small">Don't worry- we won't share your answers with anyone</div></p>
 
-<% end %>
+	<% end %>
 
-</div>
-
-
-<br>
-<div id="info">
-<img src="<%=@question.info_image%>" height="200" width="200" alt="kids bullying"/>
-
-<%= @question.info_text %>
-</div>
-
-
-<div class="story">
-<h1><%= @question.story_head %></h1>
-<br>
-<div class="story-video"><iframe width="320" height="215"
-src="<%=@question.story_video%>">
-</iframe></div>
-<div class="story-text"><p><%= @question.story_text %></p></div>
 </div>
 
  <footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>

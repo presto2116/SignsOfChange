@@ -1,7 +1,6 @@
 class QuestionsController < ApplicationController
 
   def index
-
   end
 
   def show
@@ -9,5 +8,4 @@ class QuestionsController < ApplicationController
       @student = Student.find(params[:student_id])
       @question = Question.find(params[:id])
   end
-
 end
