@@ -23,15 +23,6 @@ class StudentsController < ApplicationController
 		end
 	end
 
-	def edit
-
-	end
-
-	def update
-		@student.update( student_params )
-		redirect_to :back
-	end
-
 	def destroy
 		@sign = Sign.find(params[:id])
     @sign.destroy

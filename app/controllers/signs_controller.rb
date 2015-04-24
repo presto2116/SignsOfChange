@@ -9,14 +9,6 @@ class SignsController < ApplicationController
     @sign = Sign.new
   end
 
-  def show
-    @signs = Sign.all
-  end
-
-  # def edit
-  #   @sign = Sign.find(params[:id])
-  # end
-
   def create
       @sign = Sign.new(sign_params)
       if @sign.save
@@ -24,6 +16,10 @@ class SignsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @signs = Sign.all
   end
 
   def destroy

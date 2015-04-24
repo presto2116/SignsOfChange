@@ -23,8 +23,6 @@ Question.create(question: "Do you spend some time thinking about what you post a
 
 
 
-
-Sign.create(sign_source: "http://img.youtube.com/vi/l8lZx-I-Dtg/mqdefault.jpg")
 Sign.create(sign_source: "sign_selfie_2.jpg")
 Sign.create(sign_source: "sign_selfie_4.jpg")
 Sign.create(sign_source: "sign_selfie_2.jpg")

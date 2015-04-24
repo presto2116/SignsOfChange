@@ -1,5 +1,3 @@
-gem 'httparty'
-
   class AdultsController < ApplicationController
 
     def index
