@@ -1,6 +1,7 @@
-<div class="question">
-<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
 
+<div class="student_header"><%= link_to image_tag("student_header.jpg", :alt   => "h"),students_path %></div>
+<div class="question">
+<div class="question-box">
 <% if @question.id <10 %>
 		<div class="question-num-9">Q#<%="#{@question.id}"%></div>
 <% else %>
@@ -9,7 +10,7 @@
 
 
 <%= @question.question %>
-<p>Don't worry- we won't share your answers with anyone</p>
+
 <%= form_for [@student, @question, @question_response] do |f| %>
 
 	<%= f.radio_button :response, true, :checked => true  %>
@@ -18,31 +19,28 @@
 	<%= f.label :response, "No", :value => "false" %>
 
 	<%= f.submit ("Next Question"), :class => "submit-button" %>
-
+<p><div class="small">Don't worry- we won't share your answers with anyone</div></p>
 
 <% end %>
 
-
+</div>
 
 
 <br>
 <div id="info">
 <img src="<%=@question.info_image%>" height="200" width="200" alt="kids bullying"/>
-</div>
-<br>
-<br>
-<br>
+
 <%= @question.info_text %>
-<br>
+</div>
 
 
 <div class="story">
-<p class="storyhead"><h1><%= @question.story_head %></h1></p>
+<h1><%= @question.story_head %></h1>
 <br>
-<iframe width="320" height="215"
+<div class="story-video"><iframe width="320" height="215"
 src="<%=@question.story_video%>">
-</iframe>
-<p><%= @question.story_text %></p>
+</iframe></div>
+<div class="story-text"><p><%= @question.story_text %></p></div>
 </div>
 
  <footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopbullying.gov/get-help-now/" %></div></footer>

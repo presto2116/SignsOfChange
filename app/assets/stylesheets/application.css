@@ -15,77 +15,54 @@
  */
 
  body {
-   /*position: relative;*/
    color: #555;
    font-family: 'Lato', 'Arial', sans-serif;
    height: 50%;
- }
+}
 
 div#student_img a img{
-        position: absolute;
-        margin: auto;
-
+  position: absolute;
+  margin: auto;
 }
 
-.adult_header a img{
-      margin-left: auto;
-      margin-right: auto;
-       width: 75%;
-        display: block;
-}
-.take-quiz a{
-  color: white;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  font-size: 25px;
-  border-radius: 50%;
-  background: #9900CC;
-  white-space:pre-wrap;
-  border:0;
-  padding: 15px;
-  display: inline-block;
-  float: right;
-  margin-right: 50px;
-  text-decoration: none;
-
-}
-div#info img{
-  position: right;
-  display: inline-block;
-  float: right;
-  max-height: 300px;
-  width: 350px;
-
-}
-div#story {
-  display: inline-block;
-  border-bottom: 1px solid black;
-}
-
-.story1{
-  border-bottom: 1px solid black;
-}
-.story{
-  border-bottom: 1px solid black;
+.selfie {
+  margin-top: 10px;
+  padding: 20px 0 20px 0;
   border-top: 1px solid black;
-}
-.storyhead {
-  position: right;
-  float: right;
-  padding:15px 40px;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
+.statistics {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
 
+.small {
+  font-size: 12px;
+}
+
+.selfie img{
+  width: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.student_header a img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+}
 
 span#adult-logo a img{
-        padding-left: 10px;
-
-
+  padding-left: 10px;
 }
+
 span#students-logo a img{
         padding-left: 100px;
-
 }
 
 div#header-wrap a img {
@@ -100,63 +77,22 @@ div#header-wrap a img {
 .main_header image_tag{
   width: 40px;
 }
+
 .container {
 
-    text-align: left;
-    padding:15px 40px;
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #6B6C70 ;
-    font-size: 19px;
-
-
+  text-align: left;
+  padding:15px 40px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6B6C70 ;
+  font-size: 19px;
 }
-div#footer-wrap img{
+
+div#footer-wrap img {
+  padding-top: 20px;
   max-height: 500px;
   width: 100%;
-}
-
-.question .question-num-9 {
-  color: white;
-  line-height: 100px;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
-  border-radius: 100%;
-  background: #9900CC;
-
-  border:0;
-  white-space: pre-wrap;
-  display: block;
-}
-.question .question-num-10 {
-  color: white;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
-  font-size: 40px;
-  border-radius: 100%;
-  background: #9900CC;
-  border:0;
-  white-space: pre-wrap;
-
-  display: block;
-}
-
-
-.question .submit-button {
-  color: white;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-  font-size: 16px;
-  border-radius: 50%;
-  background: #9900CC;
-  white-space:pre-wrap;
-  border:0;
-  float: right;
 }
 
 .new-student .student-button {
@@ -174,8 +110,7 @@ div#footer-wrap img{
 input[type='submit'] {
   float: right;
   margin: 10px 35% 0 0;
-  }
-
+}
 
 .thumbnail {
   height: 42px;
@@ -183,28 +118,155 @@ input[type='submit'] {
 }
 
 .thumbnail:active {
-    position: absolute;
-    top: 600px;
-    left: 300px;
-    width:500px;
-    height:auto;
-    display:block;
-    z-index:999;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
 }
 
 .sign p{
   font-size: 18px;
 }
+
 .sign p:nth-child(1){
   font-size: 28px;
 }
+
 .student select{
   font-size: 1em;
   margin-left: 50px
+}
+
+.take-quiz a{
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  border-radius: 50%;
+  background: #9900CC;
+  white-space:pre-wrap;
+  border:0;
+  padding: 15px;
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+  text-decoration: none;
 }
 
 .adult iframe {
   margin: 30px;
 }
 
+.adult_header a img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  display: block;
+}
 
+.video-resources {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.video-resources iframe{
+  display: inline-block;
+  margin: auto;
+}
+
+.question .question-num-10 {
+  color: white;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  border-radius: 100%;
+  background: #9900CC;
+  border:0;
+  white-space: pre-wrap;
+  display: block;
+}
+
+.question .submit-button {
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  border-radius: 50%;
+  background: #9900CC;
+  white-space:pre-wrap;
+  border:0;
+  float: right;
+  display: inline;
+}
+
+.question .question-num-9 {
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  border-radius: 100%;
+  background: #9900CC;
+  border:0;
+  white-space: pre-wrap;
+  display: block;
+}
+
+.question-box {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+div#info {
+  display: inline-block;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid black;
+}
+
+div#info img{
+  display: inline-block;
+  float: right;
+  max-height: 300px;
+  width: 350px;
+}
+
+div#story {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.story1{
+  border-bottom: 1px solid black;
+}
+
+.story{
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.story-video {
+  float:left;
+  max-width: 45%;
+  display: inline-block;
+}
+
+.story-text {
+  float: right;
+  width: 45%;
+  display: inline-block;
+}
+
+.storyhead {
+  float: right;
+  padding:15px 40px;
+}

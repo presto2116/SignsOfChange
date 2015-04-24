@@ -2,35 +2,42 @@
 <div class="adult">
 <div class="adult_header"><%= link_to image_tag("adult_header.jpg", :alt   => "h"),students_path %></div>
 
-<h3><%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%></h3>
-<br>
-<p>Statistics</p>
+
+<div class="statistics">
+<h3>Statistics</h3>
 <ul>
   <li>Nearly one in four students say they have been the victim of cyberbullying at some point.</li>
   <li>Joseph Wright, a pediatrician at Children's National Health System in Washington, D.C., says that by third grade, 75% of kids have been exposed to bullying, the majority as bystanders. "It's a pervasive behavior," he says.</li>
-</ul>
+</ul></div>
 
  <h3>News</h3>
     <p><% @articles.each do |article| %>
     <a href="<%=article["link"]%>"><%=article["title"]%></a></p>
     <%end%>
 
+<div class="selfie"><%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%></div>
 
 <h3>Video Resources</h3>
-
+<div class="video-resources">
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/-5PZ_Bh-M6o">
 </iframe>
-
+</div>
+<div class="video-resources">
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/BrqRRQD-sz0">
 </iframe>
+</div>
+<div class="video-resources">
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/BLzCpAfzSu4">
 </iframe>
+</div>
+<div class="video-resources">
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/e_Eq-dLHluA">
 </iframe>
+</div>
 
  <footer><div id="footer-wrap"><%= image_tag("adult_footer.jpg", :alt => "adult_footer") %></div></footer>
 </div>
