@@ -1,6 +1,6 @@
 
 <div class="adult">
-<div class="adult_header"><%= link_to image_tag("adult_header.jpg", :alt   => "h"),students_path %></div>
+<div class="adult_header"><%= link_to image_tag("adult_header.jpg", :alt   => "h"), adults_path %></div>
 
 
 <div class="statistics">
@@ -13,6 +13,8 @@
  <h3>News</h3>
     <p><% @articles.each do |article| %>
     <a href="<%=article["link"]%>"><%=article["title"]%></a></p>
+    <p><%= article["description"] %></p>
+    <p><%= article %></p>
     <%end%>
 
 <div class="selfie"><%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%></div>
