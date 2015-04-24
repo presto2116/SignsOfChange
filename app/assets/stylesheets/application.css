@@ -87,7 +87,6 @@ div#header-wrap a img {
 }
 
 .container {
-
   text-align: left;
   padding:15px 40px;
   max-width: 680px;
@@ -169,6 +168,9 @@ input[type='submit'] {
   float: right;
   margin-right: 5px;
   text-decoration: none;
+}
+.student-location img{
+  width: 100%;
 }
 
 .adult_header a img{
