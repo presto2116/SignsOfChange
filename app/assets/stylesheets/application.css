@@ -127,12 +127,12 @@ input[type='submit'] {
 }
 
 .thumbnail:active {
-    position: absolute;
-    top: 600px;
+    position: fixed;
+    top: 100px;
     left: 300px;
     width:500px;
     height:auto;
-    display:block;
+    display:inline;
     z-index:999;
 
 }
