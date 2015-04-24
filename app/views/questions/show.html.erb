@@ -9,7 +9,7 @@
 	<% end %>
 
 
-<%= @question.question %>
+<h2><%= @question.question %></h2>
 
 <%= form_for [@student, @question, @question_response] do |f| %>
 
@@ -43,4 +43,4 @@ src="<%=@question.story_video%>">
 <div class="story-text"><p><%= @question.story_text %></p></div>
 </div>
 
- <footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopbullying.gov/get-help-now/" %></div></footer>
+ <footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>

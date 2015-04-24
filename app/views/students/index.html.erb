@@ -4,17 +4,17 @@
 <h1>Learn about cyberbullying from real people and see how you can make a difference</h1>
 
 <div class="take-quiz">
-	<%= link_to "Take The Quiz",new_student_path %></div>
+	<%= link_to "Click Here to Start",new_student_path %>
 
 <div class="purple"><h2>Try our interactive quiz and discover more!</h2></div>
-
-<br>
-
+</div>
 <h3>Learn about cyberbullying from real people
 and see how you can make a difference</h3>
 <div class="selfie">
-<%= link_to(image_tag("take_a_selfie_image.jpg"), new_sign_path ) %></div>
-<br>
+
+<%= link_to(image_tag("take_a_selfie_image.jpg"), new_sign_path ) %>
+<p>Click Above to Enter</p>
+</div>
 
 	<% @questions.each do |question| %>
 
@@ -29,5 +29,5 @@ and see how you can make a difference</h3>
 
 	<%end%>
 	</div>
-	<footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopbullying.gov/get-help-now/" %></div></footer>
+	<footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>
 	

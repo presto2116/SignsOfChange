@@ -14,10 +14,13 @@
     <p><% @articles.each do |article| %>
     <a href="<%=article["link"]%>"><%=article["title"]%></a></p>
     <p><%= article["description"] %></p>
-    <p><%= article %></p>
     <%end%>
 
-<div class="selfie"><%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%></div>
+<div class="selfie">
+
+<%= link_to(image_tag("take_a_selfie_image.jpg"), sign_path("1"))%>
+<p>Click Above to Enter</p>
+</div>
 
 <h3>Video Resources</h3>
 <div class="video-resources">
