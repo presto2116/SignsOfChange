@@ -21,12 +21,6 @@ class SignsController < ApplicationController
     @signs = Sign.all
   end
 
-  def destroy
-    @sign = Sign.find(params[:id])
-    @sign.destroy
-    redirect_to sign_path("1")
-  end
-
   private
     def sign_params
       return params[:sign].permit(:sign_source)

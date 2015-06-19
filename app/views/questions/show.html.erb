@@ -25,7 +25,7 @@
 		<div class="question-num-10">Q#<%="#{@question.id}"%></div>
 	<% end %>
 
-
+	
 	<h2><%= @question.question %></h2>
 
 	<%= form_for [@student, @question, @question_response] do |f| %>
@@ -44,7 +44,7 @@
 	<p><div class="small">Don't worry- we won't share your answers with anyone</div></p>
 
 	<% end %>
-
+	</div>
 </div>
 
  <footer><div id="footer-wrap"><%= link_to image_tag("student_footer.jpg", :alt => "student_footer"), "http://www.stopcyberbullying.org/index2.html" %></div></footer>
